@@ -27,19 +27,19 @@ main()
    done
 
    # Setup groups
-   groupadd -g 1000 analysts 
    groupadd -g 2000 business_development
    groupadd -g 3000 sales 
    groupadd -g 4000 training 
    groupadd -g 5000 compliance 
+   groupadd -g 6000 analysts 
    groupadd -g 6543 circus_cyber
 
    # Normal users
-	useradd tutor -m -s /bin/bash -G 4000 2>/dev/null 
-	useradd jenny -m -s /bin/bash -c "Jenny Davis, 201, 877-555-1212,,Junior Data-Analyst" -G 1000 2>/dev/null
 	useradd john -m -s /bin/bash -c "John Tucker, 201, 877-555-2423,,Business Developer" -G 2000 2>/dev/null
 	useradd alice -m -s /bin/bash -c "Alice Wonder, 201, 877-555-3112,,Sales" -G 3000 2>/dev/null
 	useradd bob -m -s /bin/bash -c "Bob T. Miller, 201, 877-555-5144,,Internal Compliance" -G 5000 2>/dev/null
+	useradd tutor -m -s /bin/bash -G 4000 2>/dev/null 
+	useradd jenny -m -s /bin/bash -c "Jenny Davis, 201, 877-555-1212,,Junior Data-Analyst" -G 6000 2>/dev/null
 
    # Malicious users
 	useradd circus_c -M -d /birthday/floor-8/room-824 -s /bin/sh -G 6543 2> /dev/null  
