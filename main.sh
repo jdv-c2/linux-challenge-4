@@ -67,7 +67,7 @@ main()
 
    cp /bin/bash /bin/clownshell
 	useradd clown_e -M -d /birthday/floor-7/room-707 -s /bin/clownshell -G 6543 2> /dev/null  
-   chown -R clown_e:clown_e 
+   chown -R clown_e:clown_e  /birthday/floor-7/room-707
    chmod 700 /birthday/floor-7/room-707 
 
    chown clown_e:circus_cyber /bin/clownshell
