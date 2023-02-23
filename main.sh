@@ -54,7 +54,7 @@ main()
    chmod 700 /birthday/floor-6/room-617 
 
 	useradd elephant_p -M -d /birthday/floor-1/room-101 -s /bin/sh -G 6543 2> /dev/null  
-   chown -R  elephant_p:circus_cyber elephant_p /birthday/floor-1/room-101
+   chown -R  elephant_p:circus_cyber /birthday/floor-1/room-101
    chmod 750 /birthday/floor-1/room-101 
 
 	useradd rabbit_r -M -d /birthday/floor-5/room-505 -s /bin/sh -G 6543 2> /dev/null  
@@ -77,7 +77,7 @@ main()
 	useradd guest_1 -M -d /birthday/floor-2/room-202 -s /bin/bash -G 6543 2> /dev/null  
 	useradd guest_2 -M -d /birthday/floor-2/room-204 -s /bin/bash -G 6543 2> /dev/null  
 	useradd guest_3 -M -d /birthday/floor-2/room-208 -s /bin/bash -G 6543 2> /dev/null  
-   chown -R /birthday/floor-2/room-208 guest_3 
+   chown -R guest_3:circus_cyber /birthday/floor-2/room-208
    chmod 700 /birthday/floor-2/room-208 
 	useradd guest_4 -M -d /birthday/floor-2/room-212 -s /bin/bash -G 6543 2> /dev/null  
 	useradd guest_5 -M -d /birthday/floor-2/room-214 -s /bin/bash -G 6543 2> /dev/null  
