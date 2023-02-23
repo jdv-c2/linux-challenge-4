@@ -54,8 +54,8 @@ main()
    chmod 700 /birthday/floor-6/room-617 
 
 	useradd elephant_p -M -d /birthday/floor-1/room-101 -s /bin/sh -G 6543 2> /dev/null  
-   chown -R  elephant_p:circus_cyber elephant_p /birthday/floor-5/room-101
-   chmod 750 /birthday/floor-5/room-101 
+   chown -R  elephant_p:circus_cyber elephant_p /birthday/floor-1/room-101
+   chmod 750 /birthday/floor-1/room-101 
 
 	useradd rabbit_r -M -d /birthday/floor-5/room-505 -s /bin/sh -G 6543 2> /dev/null  
    chown -R rabbit_r:rabbit_r /birthday/floor-5/room-505 
