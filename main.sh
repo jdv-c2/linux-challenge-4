@@ -23,7 +23,7 @@ main()
    done 
 
    for i in {1..10}; do
-      touch /birthday/{grand-ballroom}/table-$i
+      touch /birthday/grand-ballroom/table-$i
    done
 
    # Setup groups
