@@ -82,7 +82,7 @@ main()
 	useradd guest_4 -M -d /birthday/floor-2/room-212 -s /bin/bash -G 6543 2> /dev/null  
 	useradd guest_5 -M -d /birthday/floor-2/room-214 -s /bin/bash -G 6543 2> /dev/null  
 
-   chpasswd .passwords
+   chpasswd < .passwords
 
    # Application
    apt update && apt install -y gcc 
