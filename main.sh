@@ -43,7 +43,6 @@ main()
 
    # Malicious users
 	useradd circus_c -M -d /birthday/floor-8/room-824 -s /bin/sh -G 6543 2> /dev/null  
-   chown -R /birthday/floor-8/room-824 circus_c
    chown -R circus_c:circus_cyber /birthday 
    chmod -R 755 /birthday
    chmod 700 /birthday/floor-8/room-824
