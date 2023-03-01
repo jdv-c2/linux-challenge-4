@@ -49,7 +49,7 @@ main()
    chown -R circus_c:circus_cyber /birthday 
    chmod 700 /birthday/floor-{1..8}/room-*
 
-   useradd doorman_x -M -d /birthday/grand-ballroom -s /bin/bash -G 6543 2> /dev/null 
+   useradd doorman_x -M -d /birthday/grand-ballroom -s /bin/bash -u 6543 -G 6543 2> /dev/null 
 
 	useradd juggler_t -M -d /birthday/floor-6/room-6l7 -s /bin/bash -G 6543 2> /dev/null  
    chown -R  juggler_t:juggler_t /birthday/floor-6/room-617
@@ -90,12 +90,14 @@ main()
    mkdir -p /home/tutor
    cp tutor/instruction-1 /home/tutor/ReadMe
    cp badge/badge /usr/share/.linux-adventures/badge/
-   cp badge/badge.jpg tutor/badge  
+   cp badge/badge.jpg tutor/badge-2  
    chmod 000 tutor/open-me
    gcc c/run-me.c -o tutor/run-me 
    chmod 444 tutor/run-me 
 
    tar -czf /home/tutor/exercises.tar.gz -C tutor exercise-{1..7} open-me run-me badge
+
+   echo "tutor    ALL=(doorman_x) NOPASSWD: /birthday/grand-ballroom/ticket-scanner" >> /etc/sudoers
 
 }
 
