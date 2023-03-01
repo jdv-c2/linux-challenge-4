@@ -97,16 +97,16 @@ main()
 
    # ---> Target 2 <---
    # Empty tables
-   figlet "Guest 1" > /birtday/grand-ballroom/table-1
+   figlet "Guest 1" > /birthday/grand-ballroom/table-1
    chown guest_1: > /birtday/grand-ballroom/table-1
    
-   figlet "Guest 2" > /birtday/grand-ballroom/table-2
+   figlet "Guest 2" > /birthday/grand-ballroom/table-2
    chown guest_2: > /birtday/grand-ballroom/table-2
 
-   figlet "Guest 4" > /birtday/grand-ballroom/table-4
+   figlet "Guest 4" > /birthday/grand-ballroom/table-4
    chown guest_4: > /birtday/grand-ballroom/table-4
    
-   figlet "Guest 5" > /birtday/grand-ballroom/table-5
+   figlet "Guest 5" > /birthday/grand-ballroom/table-5
    chown guest_5: > /birtday/grand-ballroom/table-5
 
    # Mission 1
