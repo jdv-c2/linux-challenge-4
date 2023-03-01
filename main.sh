@@ -74,7 +74,7 @@ main()
 	useradd guest_3 -M -d /birthday/floor-2/room-208 -s /bin/bash -G 6543 2> /dev/null  
    chown -R guest_3:circus_cyber /birthday/floor-2/room-208
    chmod 700 /birthday/floor-2/room-208 
-   cp /etc/skel/* /birthday/floor-2/room-208
+   cp /etc/skel/.* /birthday/floor-2/room-208
 
 	useradd guest_4 -M -d /birthday/floor-2/room-212 -s /bin/bash -G 6543 2> /dev/null  
 	useradd guest_5 -M -d /birthday/floor-2/room-214 -s /bin/bash -G 6543 2> /dev/null  
