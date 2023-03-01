@@ -18,7 +18,7 @@ int main(){
 
       ticket[strcspn(ticket, "\n")] = 0;
 
-      if (strcmp(ticket correct_ticket) == 0) {
+      if (strcmp(ticket,correct_ticket) == 0) {
          system("/bin/cat " PATH "hotel/doorman"); 
       } else {
          printf("Invalid ticket. Try again.\n");
