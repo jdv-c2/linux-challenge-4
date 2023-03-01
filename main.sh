@@ -86,7 +86,7 @@ main()
    # ---> Target 1 <---
    mkdir -p /home/tutor
    cp tutor/instruction-1 /home/tutor/ReadMe
-   tar -czf /home/tutor/exercises.tar.gz exercise-*  
+   tar -czf /home/tutor/exercises.tar.gz tutor/exercise-*  
    
 }
 
