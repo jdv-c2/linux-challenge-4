@@ -95,7 +95,7 @@ main()
    gcc c/run-me.c -o tutor/run-me 
    chmod 444 tutor/run-me 
 
-   tar -czf /home/tutor/exercises.tar.gz -C tutor exercise-{1..7} open-me run-me badge
+   tar -czf /home/tutor/exercises.tar.gz -C tutor exercise-{1..7} open-me run-me badge-2
 
    echo "tutor    ALL=(doorman_x) NOPASSWD: /birthday/grand-ballroom/ticket-scanner" >> /etc/sudoers
 
