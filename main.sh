@@ -114,6 +114,13 @@ main()
    gcc c/ticket-scanner.c -o /birthday/grand-ballroom/ticket-scanner
    chown doorman_x:circus_cyber /birthday/grand-ballroom/ticket-scanner
 
+   # Mission 2
+   cp /hotel/table-3 /birthday/grand-ballroom/table-3
+   chown guest_3: /birthday/grand-ballroom/table-3
+   echo "The password of the elephant is: w7GTfP2z" > /birthday/floor-2/room-208/.secret 
+   chown guest_3: /birthday/floor-2/room-208/.secret.secret
+   chmod 000 /birthday/floor-2/room-208/.secret.secret
+
 }
 
 main
