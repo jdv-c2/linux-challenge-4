@@ -7,3 +7,17 @@
    \  _/     
 .--'--'-.   The last exercise before we'll send you to your mission... 
 
+The sudo command is a command line utility in Linux to run a command as a
+different user, depending on your privileges. 
+
+The syntax is: 
+
+sudo -u <user> command
+
+Usually this is done to run command with elevated (root) privileges. In that
+case you can just run sudo without specifying the user.
+
+To list your own sudo privileges you can run sudo -l.
+
+Go ahead...  What are the sudo privileges of your current user (tutor)? 
+
