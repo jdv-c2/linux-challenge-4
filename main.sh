@@ -87,7 +87,7 @@ main()
    # ---> Target 1 <---
    mkdir -p /home/tutor
    mv tutor/* /home/tutor/
-   tar -czf exercises.tar.gz exercises-*  
+   tar -czf exercises.tar.gz exercise-*  
    
 }
 
