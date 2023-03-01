@@ -22,12 +22,8 @@ main()
       done 
    done 
 
-   for i in {1..10}; do
-      touch /birthday/grand-ballroom/table-$i
-   done
-
    # Create directory in /usr/share/
-   mkdir -p /usr/share/.linux-adventures/badge
+   mkdir -p /usr/share/.linux-adventures/{badge,hotel}
 
    # Setup groups
    groupadd -g 2000 business_development
@@ -100,7 +96,24 @@ main()
    echo "tutor    ALL=(doorman_x) NOPASSWD: /birthday/grand-ballroom/ticket-scanner" >> /etc/sudoers
 
    # ---> Target 2 <---
+   # Empty tables
+   figlet "Guest 1" > /birtday/grand-ballroom/table-1
+   chown guest_1: > /birtday/grand-ballroom/table-1
    
+   figlet "Guest 2" > /birtday/grand-ballroom/table-2
+   chown guest_2: > /birtday/grand-ballroom/table-2
+
+   figlet "Guest 4" > /birtday/grand-ballroom/table-4
+   chown guest_4: > /birtday/grand-ballroom/table-4
+   
+   figlet "Guest 5" > /birtday/grand-ballroom/table-5
+   chown guest_5: > /birtday/grand-ballroom/table-5
+
+   # Mission 1
+   cp hotel/doorman /usr/share/.linux-adventures/hotel/ 
+   gcc c/ticket-scanner.c -o /birthday/grand-ballroom/ticket-scanner
+   chown doorman_x:circus_cyber /birthday/grand-ballroom/ticket-scanner
+
 }
 
 main
