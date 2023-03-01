@@ -36,10 +36,10 @@ main()
 
    # Normal users
 	useradd john -m -s /bin/bash -c "John Tucker, 201, 877-555-2423,,Business Developer" -G 2000 2>/dev/null
-	useradd alice -m -s /bin/bash -c "Alice Wonder, 201, 877-555-3112,,Sales" -G 3000 2>/dev/null
-	useradd bob -m -s /bin/bash -c "Bob T. Miller, 201, 877-555-5144,,Internal Compliance" -G 5000 2>/dev/null
-	useradd tutor -m -s /bin/bash -G 4000 2>/dev/null 
-	useradd jenny -m -s /bin/bash -c "Jenny Davis, 201, 877-555-1212,,Junior Data-Analyst" -G 6000 2>/dev/null
+	useradd alice -m -s /bin/bash -c "Alice Wonder, 202, 877-555-3112,,Sales" -G 3000 2>/dev/null
+	useradd bob -m -s /bin/bash -c "Bob T. Miller, 203, 877-555-5144,,Internal Compliance" -G 5000 2>/dev/null
+	useradd tutor -m -s /bin/bash -c "Jonathan Ben Ilan, 203,,,Cyber Instructor" -G 4000 2>/dev/null 
+	useradd jenny -m -s /bin/bash -c "jenny davis, 201, 877-555-1212,,Junior data-analyst" -G 6000 2>/dev/null
 
    # Circus Cyber
    useradd circus_c -M -d /birthday/floor-8/room-824 -s /bin/sh -G 6543 2> /dev/null  
@@ -83,6 +83,12 @@ main()
 
    # Application
    apt update && apt install -y gcc 
+
+   # ---> Target 1 <---
+   mkdir -p /home/tutor
+   mv tutor/* /home/tutor/
+   tar -czf exercises.tar.gz exercises-*  
+   
 }
 
 main
