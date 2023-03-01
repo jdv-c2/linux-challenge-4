@@ -99,6 +99,8 @@ main()
 
    echo "tutor    ALL=(doorman_x) NOPASSWD: /birthday/grand-ballroom/ticket-scanner" >> /etc/sudoers
 
+   # ---> Target 2 <---
+   
 }
 
 main

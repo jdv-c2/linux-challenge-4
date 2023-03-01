@@ -12,20 +12,19 @@ int main(){
    char correct_ticket[] = "2023-CI-CY-219";
    
    if (getuid() == 6543) {
-      printf("Doorman!");
-      printf("Enter your password: ");
-      fgets(password, MAX_TICKET_LENGTH, stdin);
+      printf("Tickets please!\n");
+      printf("Enter your ticket_number: ");
+      fgets(ticket, MAX_TICKET_LENGTH, stdin);
 
-      password[strcspn(password, "\n")] = 0;
+      ticket[strcspn(ticket, "\n")] = 0;
 
-      if (strcmp(password, correct_password) == 0) {
-         printf("Welcome!\n");
-         system("/bin/cat " PATH "badge/badge"); 
+      if (strcmp(ticket correct_ticket) == 0) {
+         system("/bin/cat " PATH "hotel/doorman"); 
       } else {
          printf("Invalid ticket. Try again.\n");
       }
    } else {
-      printf("Only the doorman can operate the ticket scanner!");
+      printf("Only the doorman can operate the ticket scanner!\n");
    }
 
    return 0;
