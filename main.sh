@@ -90,12 +90,12 @@ main()
    mkdir -p /home/tutor
    cp tutor/instruction-1 /home/tutor/ReadMe
    cp badge/badge /usr/share/.linux-adventures/badge/
-   cp badge/badge-4 tutor/  
+   cp badge/badge.jpg tutor/badge  
    chmod 000 tutor/open-me
    gcc c/run-me.c -o tutor/run-me 
    chmod 444 tutor/run-me 
 
-   tar -czf /home/tutor/exercises.tar.gz -C tutor exercise-{1..7} open-me run-me
+   tar -czf /home/tutor/exercises.tar.gz -C tutor exercise-{1..7} open-me run-me badge
 
 }
 
