@@ -17,7 +17,7 @@ int main() {
 
    if (strcmp(password, correct_password) == 0) {
       printf("Login successful!\n");
-      system("/bin/cat " PATH "badge/badge/"); 
+      system("/bin/cat " PATH "badge/badge"); 
    } else {
       printf("Incorrect password. Try again.\n");
    }
