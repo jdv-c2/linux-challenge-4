@@ -87,7 +87,7 @@ main()
    mkdir -p /home/tutor
    cp tutor/instruction-1 /home/tutor/ReadMe
    chmod 000 tutor/open-me
-   tar -czf /home/tutor/exercises.tar.gz -C tutor exercise-* open-me 
+   tar -czf /home/tutor/exercises.tar.gz -C tutor exercise-{1..7} open-me 
    echo pwd > file 
 }
 
