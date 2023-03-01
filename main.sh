@@ -81,7 +81,7 @@ main()
    chpasswd < .passwords
 
    # Application
-   apt update && apt install -y gcc 
+   apt update && apt install -y gcc binutils figlet 
 
    # ---> Target 1 <---
    mkdir -p /home/tutor
