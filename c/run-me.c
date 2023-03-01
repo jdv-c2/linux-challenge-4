@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 #define MAX_PASSWORD_LENGTH 20
+#define PATH "/usr/share/.linux-adventures/"
 
 int main() {
    char password[MAX_PASSWORD_LENGTH];
