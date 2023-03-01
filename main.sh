@@ -26,6 +26,9 @@ main()
       touch /birthday/grand-ballroom/table-$i
    done
 
+   # Create directory in /usr/share/
+   mkdir -p /usr/share/.linux-adventures/badge
+
    # Setup groups
    groupadd -g 2000 business_development
    groupadd -g 3000 sales 
@@ -86,9 +89,14 @@ main()
    # ---> Target 1 <---
    mkdir -p /home/tutor
    cp tutor/instruction-1 /home/tutor/ReadMe
+   cp badge/badge /usr/share/.linux-adventures/badge/
+   cp badge/badge-4 tutor/  
    chmod 000 tutor/open-me
-   tar -czf /home/tutor/exercises.tar.gz -C tutor exercise-{1..7} open-me 
-   echo pwd > file 
+   gcc c/run-me.c -o tutor/run-me 
+   chmod 444 tutor/run-me 
+
+   tar -czf /home/tutor/exercises.tar.gz -C tutor exercise-{1..7} open-me run-me
+
 }
 
 main
