@@ -1,0 +1,19 @@
+
+  #####
+ #### _\_  
+ ##=-[.].]
+ #(    _\    
+  #   __|            
+   \  _/     
+.--'--'-.   Exercise 4 is about the file /etc/group...
+
+The /etc/group file is a configuration file that defines the groups on the 
+system. It shows all the groups and lists the  members of each group according 
+to supplemental (or secondary) group membership. 
+
+Remember: the primary group id is shown in the /etc/passwd file. 
+
+Open the /etc/group file...
+
+What is the group id (GID) of the hacker group circus_cyber?
+   

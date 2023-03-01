@@ -1,0 +1,17 @@
+
+  #####
+ #### _\_  
+ ##=-[.].]
+ #(    _\    
+  #   __|            
+   \  _/     
+.--'--'-.    Exercise 2 is also about the /etc/passwd file...
+
+We've found some malicious hackers on our system belonging to the hacker
+group circus cyber. One of them is the the user elephant_p.
+
+The sixth field of the /etc/passwd file shows the location of the home 
+directory of a user.
+
+What is the home directory of the user 'elephant_p' on the system? 
+   

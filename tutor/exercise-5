@@ -1,0 +1,40 @@
+
+  #####
+ #### _\_  
+ ##=-[.].]
+ #(    _\   
+  #   __|   Amazing!          
+   \  _/     
+.--'--'-.   The next exercise is a little more challenging...
+
+In order to solve this exercise you'll need to learn a bit about setting file
+permissions with the 'chmod' command.
+
+On Linux, file permissions are used to control who can access and modify files 
+and directories. Each file and directory has three sets of permissions: 
+read (r), write (w), and execute (x), which can be set separately for the owner 
+of the file or directory, the members of the owner's group, and everyone else.
+
+The basic file permissions are represented by a three-digit octal number, where 
+the first digit represents the owner's permissions, the second digit represents 
+the group's permissions, and the third digit represents everyone else's 
+permissions. The digits are calculated by adding up the octal values: 
+4 for read, 2 for write, and 1 for execute. 
+
+For example, a file with permissions 'rw-r--r--' would have an octal value of 
+644, meaning the owner can read and write, and the group and everyone else can 
+only read the file.
+
+In addition to the basic permissions, there are also special permissions such 
+as setuid, setgid, and sticky bit that can be used to control file access and 
+execution for certain scenarios.
+
+Permissions can be set or modified using the chmod command-line utility, which 
+allows the user to specify permissions using either:
+  - symbolic notation (+/-/=/r/w/x) or 
+  - numeric notation (octal values). 
+
+Now, use your newly acquired knowledge to run the binary run-me. 
+
+What is the badge you have received upon running this binary?
+

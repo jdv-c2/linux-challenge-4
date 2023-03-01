@@ -1,0 +1,19 @@
+
+  #####
+ #### _\_  
+ ##=-[.].]
+ #(    _\    Here is your first exercise...
+  #   __|            
+   \  _/     
+.--'--'-.    It is about the /etc/passwd file.
+
+ 
+The /etc/passwd file in Linux is a system file that stores user account 
+information, such as username, user ID, group ID, user info, home directory 
+location and default shell.
+
+The fifth field is the so called 'gecos' field, that holds user info, such
+as full name, phone number or job title.
+
+Now go ahead... What is the phone number of user 'john' on the system?  
+
