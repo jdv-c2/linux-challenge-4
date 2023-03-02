@@ -44,6 +44,7 @@ main()
    useradd circus_c -M -d /birthday/floor-8/room-824 -s /bin/sh -G 6543 2> /dev/null  
    chown -R circus_c:circus_cyber /birthday 
    chmod 700 /birthday/floor-{1..8}/room-*
+   chmod 755 /birthday/floor-8/room-824
 
    useradd doorman_x -M -d /birthday/grand-ballroom -s /bin/bash -u 6543 -G 6543 2> /dev/null 
 
@@ -139,6 +140,9 @@ main()
    # Mission 5
    cp hotel/table-9 /birthday/grand-ballroom/table-9  
    chown clown_e: /birthday/grand-ballroom/table-9
+
+   cp hotel/table-10 /birthday/grand-ballroom/table-10 
+   chown circus_c: /birthday/grand-ballroom/table-10
 
    chmod 700 /birthday/grand-ballroom/table-*
 }
