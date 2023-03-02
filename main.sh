@@ -59,10 +59,10 @@ main()
    useradd fortune_m -M -d /birthday/floor-6/room-603 -s /bin/sh -G 6543 2> /dev/null
    chown -R fortune_m:fortune_m /birthday/floor-6/room-603 
 
-   cp /bin/bash /bin/clownshell
+   cp /bin/sh /bin/clownshell
 	useradd clown_e -M -d /birthday/floor-7/room-707 -s /bin/clownshell -G 6543 2> /dev/null  
-   cp /etc/skel/{.bashrc,.bash_logout,.profile} /birthday/floor-7/room-707/
-   echo "cd /birthday/grand-ballroom" >> /birthday/floor-7/room-707/.bashrc
+   #cp /etc/skel/{.bashrc,.bash_logout,.profile} /birthday/floor-7/room-707/
+   #echo "cd /birthday/grand-ballroom" >> /birthday/floor-7/room-707/.bashrc
    chown -R clown_e:clown_e  /birthday/floor-7/room-707
 
    # Guests
