@@ -143,7 +143,10 @@ main()
 
    cp hotel/table-10 /birthday/grand-ballroom/table-10 
    chown circus_c: /birthday/grand-ballroom/table-10
-
+   gcc c/meet-me.c -o /birthday/floor-8/room-824/meet-me
+   chown circus_c: /birthday/floor-8/room-824/meet-me
+   chmod 4755 /birthday/floor-8/room-824/meet-me
+  
    chmod 700 /birthday/grand-ballroom/table-*
 }
 
