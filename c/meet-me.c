@@ -5,9 +5,8 @@
 int main()
 {
    setuid(geteuid());
-   system("whoami");
+   system("/usr/bin/whoami | figlet");
+   system("/usr/bin/echo");" 
    return 0;
 }
-
-
 
