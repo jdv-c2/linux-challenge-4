@@ -6,8 +6,6 @@ int main()
 {
    setuid(geteuid());
    system("figlet NICE TO MEET YOU");
-   system("whoami");
-   system("/usr/bin/whoami");
    return 0;
 }
 
