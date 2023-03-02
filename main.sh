@@ -47,21 +47,22 @@ main()
 
    useradd doorman_x -M -d /birthday/grand-ballroom -s /bin/bash -u 6543 -G 6543 2> /dev/null 
 
-	useradd elephant_p -M -d /birthday/floor-1/room-101 -s /bin/sh -G 6543 2> /dev/null  
+	useradd elephant_p -M -d /birthday/floor-1/room-101 -s /bin/bash -G 6543 2> /dev/null  
    cp /etc/skel/{.bashrc,.bash_logout,.profile} /birthday/floor-1/room-101/
+   echo "cd /birthday/grand-ballroom" >> /birthday/floor-1/room-101/.bashrc
    chown -R  elephant_p:circus_cyber /birthday/floor-1/room-101
 
 	useradd rabbit_r -M -d /birthday/floor-5/room-505 -s /bin/sh -G 6543 2> /dev/null  
-   cp /etc/skel/{.bashrc,.bash_logout,.profile} /birthday/floor-5/room-505/
    chown -R rabbit_r:rabbit_r /birthday/floor-5/room-505 
 
-   useradd fortune_m -M -d /birthday/floor-6/room-603 -s /bin/bash -G 6543 2> /dev/null
+   useradd fortune_m -M -d /birthday/floor-6/room-603 -s /bin/sh -G 6543 2> /dev/null
    chown -R fortune_m:fortune_m /birthday/floor-6/room-603 
 
    cp /bin/bash /bin/clownshell
 	useradd clown_e -M -d /birthday/floor-7/room-707 -s /bin/clownshell -G 6543 2> /dev/null  
+   cp /etc/skel/{.bashrc,.bash_logout,.profile} /birthday/floor-7/room-707/
+   echo "cd /birthday/grand-ballroom" >> /birthday/floor-7/room-707/.bashrc
    chown -R clown_e:clown_e  /birthday/floor-7/room-707
-   chown clown_e:circus_cyber /bin/clownshell
 
    # Guests
 	useradd guest_1 -M -d /birthday/floor-2/room-202 -s /bin/bash -G 6543 2> /dev/null  
@@ -69,6 +70,7 @@ main()
 
 	useradd guest_3 -M -d /birthday/floor-2/room-208 -s /bin/bash -G 6543 2> /dev/null  
    cp /etc/skel/{.bashrc,.bash_logout,.profile} /birthday/floor-2/room-208/
+   echo "cd /birthday/grand-ballroom" >> /birthday/floor-2/room-208/.bashrc
    chown -R guest_3:circus_cyber /birthday/floor-2/room-208
 
 	useradd guest_4 -M -d /birthday/floor-2/room-212 -s /bin/bash -G 6543 2> /dev/null  
@@ -128,7 +130,7 @@ main()
    cp hotel/table-7 /birthday/grand-ballroom/table-7  
    chown rabbit_r: /birthday/grand-ballroom/table-7
 
-   echo "rabbit_r    ALL=(root) NOPASSWD: /usr/sbin/useradd" >> /etc/sudoers
+   echo "rabbit_r    ALL=(root) NOPASSWD: /usr/sbin/adduser" >> /etc/sudoers
    echo "wizard_o    ALL=(fortune_m) NOPASSWD: /bin/cat /birthday/floor-6/room-603/*" >> /etc/sudoers
 
    cp hotel/table-8 /birthday/grand-ballroom/table-8  
