@@ -138,6 +138,7 @@ main()
    cp hotel/table-9 /birthday/grand-ballroom/table-9  
    chown clown_e: /birthday/grand-ballroom/table-9
 
+   chmod 700 /birthday/grand-ballroom/table-*
 }
 
 main
